@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertService } from 'src/app/resources/services/alert.service';
 import { LoginService } from 'src/app/resources/services/login.service';
 import { RequestLogin } from '../../resources/models/RequestLogin'; 
 
@@ -11,7 +12,10 @@ export class LoginComponent implements OnInit {
 
   public requestLogin!: RequestLogin 
 
-  constructor(private loginService: LoginService) { }
+  constructor(
+    private loginService: LoginService,
+    private alertService: AlertService
+    ) { }
 
   ngOnInit(): void {
     this.requestLogin = new RequestLogin();
@@ -20,8 +24,8 @@ export class LoginComponent implements OnInit {
   public submitLogin() :void{
     this.loginService.submitLogin(this.requestLogin).subscribe(data => {
       console.log(data)
-    }, err => {
-      console.error(err)
+    }, httpErr => {
+      this.alertService.error(httpErr.error);
     })
   }
 
