@@ -1,0 +1,45 @@
+<div class="p-grid p-justify-center card">
+    <div class="p-col-10 p-sm-6 p-md-4 card">
+        <p-card>
+           <div class="p-grid">
+                <div class="p-col-12 cardcenter">
+                    <i class="fas fa-archway fa-4x"></i>
+                </div>
+               <div class="p-col-12 ">
+                    <span class="p-float-label" >
+                        <input 
+                           id="float-input" 
+                           [(ngModel)]="requestLogin.email" 
+                           type="text" pInputText 
+                           class="p-col-12 space"> 
+                        <label 
+                            for="float-input" 
+                            class="p-col-12 letras"
+                            >Email</label>
+                    </span>               
+               </div>
+               <div class="p-col-12 ">     
+                    <span class="p-float-label" >
+                        <input 
+                            id="float-input" 
+                            [(ngModel)]="requestLogin.password" 
+                            class="p-col-12 space" 
+                            type="password" pInputText> 
+                        <label 
+                            for="float-input" 
+                            class="p-col-12 letras" 
+                            >Password</label>
+                    </span> 
+              </div>
+              <div class="p-col-12 ">     
+                    <button 
+                        (click)="submitLogin()"
+                        pButton 
+                        type="button p-button-danger" 
+                        label="Login" class="p-col-12" 
+                        ></button>
+              </div>
+           </div>
+        </p-card>
+    </div>  
+</div>

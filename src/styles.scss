@@ -1,0 +1,30 @@
+$background-color: rgb(228, 223, 223) !important;
+$font-color: #fff !important;
+$background-color-red: red !important;
+
+.p-card {
+    background-color: $background-color;
+    color: $font-color;
+}
+
+.cardlogin {
+    opacity: 0.1 !important;
+    filter: alpha(opacity=50);
+}
+
+body {
+    opacity: 0.95;
+    background-image: url("./assets/loginImage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.submit {
+    background-color: red;
+    color: red;
+}
+
+.cardcenter {
+    text-align: center;
+}
