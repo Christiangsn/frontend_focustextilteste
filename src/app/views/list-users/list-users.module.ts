@@ -1,15 +1,20 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ListUsersComponent } from '../list-users/list-users.component';
 import { CommonModule} from '@angular/common';
-import {MatTableModule} from '@angular/material/table';
-import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+
+
 
 @NgModule({
 
     imports: [
-        MatTableModule,
-        MatCardModule,
         CommonModule,
+        MatTabsModule,
+        FlexLayoutModule
+
     ],
     exports: [
         ListUsersComponent,

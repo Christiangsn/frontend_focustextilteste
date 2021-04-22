@@ -1,7 +1,34 @@
-.table1 {
-    margin-top: 50px;
+.user { 
+    background-color: aqua !important;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.profile {
-    padding: 0.5%
+.container-conten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.card-name{
+    margin-top: -20px;
+    align-items: center;
+    text-align: center;
+}
+
+.card-span {
+    margin-top: -4px;
+
+}
+
+.card-content {
+    margin-bottom: 4px;
+    align-items: center;
+}
+
+.icons {
+    width: 6%;  
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-bottom: -5px;
 }

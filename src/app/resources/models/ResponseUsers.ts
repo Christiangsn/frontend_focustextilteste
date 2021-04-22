@@ -1,4 +1,5 @@
 export class ResponseUsers {
+    public image?: string;
     public _id?: string;
     public name?: string;
     public email?: string;

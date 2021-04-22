@@ -8,11 +8,7 @@ import {ButtonModule} from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
-
-
-
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,7 +31,8 @@ import { LoginComponent } from './views/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule 
 
     
   ],

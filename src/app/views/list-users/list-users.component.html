@@ -1,24 +1,40 @@
-<mat-tab-group mat-align-tabs="start">
-    <mat-tab label="Users"> Content 1 
-        <div fxLayout="row wrap" fxLayoutAlign="start center">
-            <ng-container *ngFor="profile of profiles" style="margin: 0.5%">
-                <mat-card fxFlex=" 0 1 calc(33.3% - 11px")
-                          fxFlex.lt-md="0 1 calc(50% - 11px)"
-                          fxFlex.lt-sm="100%">
-                    <mat-card-header>
+<mat-tab-group>
+    <mat-tab label="Users">
+        <div fxLayout="row wrap" fxLayoutAlign="space-around center" style="padding: 2%">
+            <ng-container *ngFor="let profile of profiles" style="margin: 0.5%">
+                <mat-card class="user" fxFlex=" 0 1 calc(20.3% - 11px)"
+                         fxFlex.lt-md="0 1 calc(40% - 11px)"
+                         fxFlex.lt-sm="100%">
+                         <mat-card-header >
+                             <img src="../../../assets/imageprofile.png" alt="../../../assets/imageprofile.png" style='width: 100%'>
 
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p>11ss</p>
+                        </mat-card-header>
+                        <mat-card-content class="container-content">
+                            <div class="card-name">
+                                <h4 class="card-span">{{profile.name}}</h4>
+                            </div>
+                            <div class="card-content">   
+                                <img class="icons" src="../../../assets/o-email.png">
+                                <span>{{profile.email}}</span>
+                            </div>
+                            <div class="card-content">
+                                <img class="icons" src="../../../assets/phone-call.png">
+                                <span>{{profile.telephone}}</span>
+                                <img class="icons" src="../../../assets/cityscape.png">
+                                <span>{{profile.district}}</span>
+                            </div>
+                            
+    
+                        </mat-card-content>
 
-                    </mat-card-content>
                 </mat-card>
 
-            </div>
-
-
+            
+            
+            </ng-container>
         </div>
-
+           
+    
     </mat-tab>
 
   </mat-tab-group>
